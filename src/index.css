@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-ivory: #FAF7F2;
+  --color-cream: #F3EDE3;
+  --color-alabaster: #FFFDF9;
+  --color-beige: #EDE4D8;
+  --color-blush: #F4E9E4;
+  --color-espresso: #2B211A;
+  --color-charcoal: #4A3F37;
+  --color-taupe: #76675B;
+  --color-champagne: #B0894F;
+  --color-champagne-deep: #8A6633;
+  --color-hairline: #E4D9CA;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #2B211A;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+
+  /* Ensure anchored sections clear the sticky header cleanly */
+  section[id] {
+    scroll-margin-top: 5.25rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid #9A743B;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

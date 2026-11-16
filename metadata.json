@@ -1,0 +1,6 @@
+{
+  "name": "Hair by Tsino",
+  "description": "Sassoon Certified Hairstylist & boutique hair salon in Chümoukedima, Dimapur, Nagaland offering Balayage, Blow Dry, styling, and beauty services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
